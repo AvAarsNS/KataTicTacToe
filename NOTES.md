@@ -21,5 +21,5 @@ We want to detect X wins in other columns:
 ✔ Three Xes in third column: win!
 
 We want to detect column wins for O:
-✴ Three O's in second column: win
-- Three Xes in second column: no win for O
+✔ Three O's in second column: win
+✔ Three Xes in second column: no win for O
