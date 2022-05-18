@@ -4,8 +4,8 @@ function createBoard() {
             [' ', ' ', ' ']];
 }
 
-function placeX(board, column) {
-    board[0][column] = 'X';
+function placeX(board, column, row) {
+    board[row][column] = 'X';
     return board;
 }
 
