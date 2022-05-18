@@ -272,5 +272,27 @@ describe('This is the game of tic tac toe', () => {
             expect(detectWin(board, 'X')).toBe(true);
             expect(detectWin(board, 'O')).toBe(false);
         });
+
+        it('UAT scenario 5:\n' + 
+        'XOX\n' +
+        'OOX\n' +
+        'XXO\n' +
+        'X and O both should not win, it should be a draw', () => {
+            var board = createBoard();
+
+            board = place(board, 0, 0, 'X');
+            board = place(board, 1, 0, 'O');
+            board = place(board, 2, 0, 'X');
+            board = place(board, 0, 1, 'O');
+            board = place(board, 1, 1, 'O');
+            board = place(board, 2, 1, 'X');
+            board = place(board, 0, 2, 'X');
+            board = place(board, 1, 2, 'X');
+            board = place(board, 2, 2, 'O');
+            
+            expect(detectWin(board, 'X')).toBe(false);
+            expect(detectWin(board, 'O')).toBe(false);
+            expect(boardIsFull(board)).toBe(true);
+        });
     });
 });
