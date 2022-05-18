@@ -41,5 +41,5 @@ We want to detect horizontal wins:
 ✴ UAT Scenario 3
 
 We want to detect diagonal wins:
-- ↘ X: win
+✴ ↘ X: win
 - ↗ O: win

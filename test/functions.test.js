@@ -158,6 +158,19 @@ describe('This is the game of tic tac toe', () => {
         });
     });
 
+    describe('We also want to detect diagonal wins:', () => {
+        it('X wins when when the board is:\n' + 
+        'X--\n' +
+        '-X-\n' +
+        '--X', () => {
+            var board = createBoard();
+            board = place(board, 0, 0, 'X');
+            board = place(board, 1, 1, 'X');
+            board = place(board, 2, 2, 'X');
+            expect(detectWin(board, 'X')).toBe(true);
+        });
+    });
+
     describe('We want to test the UAT scenarios:', () => {
         it('UAT scenario 2:\n' + 
         'X--\n' +
