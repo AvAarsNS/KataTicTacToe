@@ -9,7 +9,12 @@ function place(board, column, row, marker) {
     return board;
 }
 
+function detectWin(board) {
+    return true;
+}
+
 module.exports = {
     createBoard,
-    place
+    place,
+    detectWin
 };
