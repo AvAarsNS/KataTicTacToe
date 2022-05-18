@@ -9,13 +9,13 @@ describe('This is the game of tic tac toe', () => {
     describe('We want to be able to place player markers', () => {
         it('An X in the top left', () => {
             var board = createBoard();
-            board = placeX(board);
+            board = placeX(board, 0);
 
             expect(board).toStrictEqual([['X',' ',' '],[' ',' ',' '],[' ',' ',' ']]);
         });
         it('An X in the top center', () => {
             var board = createBoard();
-            board = placeX(board);
+            board = placeX(board, 1);
 
             expect(board).toStrictEqual([[' ','X',' '],[' ',' ',' '],[' ',' ',' ']]);
         });
