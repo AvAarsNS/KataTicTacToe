@@ -30,8 +30,13 @@ function detectWin(board, marker) {
     return false;
 }
 
+function boardIsFull(board) {
+    return
+}
+
 module.exports = {
     createBoard,
     place,
-    detectWin
+    detectWin,
+    boardIsFull
 };

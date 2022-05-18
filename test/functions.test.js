@@ -1,4 +1,4 @@
-const {createBoard, place, detectWin} = require('../src/functions');
+const {createBoard, place, detectWin, boardIsFull} = require('../src/functions');
 
 describe('This is the game of tic tac toe', () => {
     it('we want to create an empty board', () => {
@@ -178,6 +178,12 @@ describe('This is the game of tic tac toe', () => {
             board = place(board, 1, 1, 'O');
             board = place(board, 2, 0, 'O');
             expect(detectWin(board, 'O')).toBe(true);
+        });
+    });
+    describe('We want to check for a full board, to detect a draw', () => {
+        it('An empty board is NOT full', () => {
+            var board = createBoard();
+            expect(boardIsFull(board)).toBe(false);
         });
     });
 

@@ -44,4 +44,9 @@ We want to detect diagonal wins:
 ✔ ↘ X: win
 ✔ ↗ O: win
 
-✴ UAT Scenario 4
+✔ UAT Scenario 4
+
+A little bit of time left, maybe we want to check for a draw
+- Board empty: no draw
+- Board almost full: no draw
+- Board full: draw
