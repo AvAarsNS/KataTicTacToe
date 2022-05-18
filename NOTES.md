@@ -25,3 +25,7 @@ We want to detect column wins for O:
 ✔ Three Xes in second column: no win for O
 
 POMODORO OVER, NOW HALF HOUR BREAK BECAUSE OF DAILY
+
+## Second pomodoro
+First, we want to test the second UAT, so we have a complete story
+Then, we want to be able to detect horizontal lines, followed by diagonals
