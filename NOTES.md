@@ -8,5 +8,5 @@ Place player markers, and maybe even detect the first win condition
 
 ✔ Place an X in the top left
 ✔ Place an X in the top center
-✴ Place an X in the bottom right
-- Place an O in the center
+✔ Place an X in the bottom right
+✴ Place an O in the center
