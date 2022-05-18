@@ -4,6 +4,11 @@ function createBoard() {
             [' ', ' ', ' ']];
 }
 
+function placeX(board) {
+    return board;
+}
+
 module.exports = {
-    createBoard
+    createBoard,
+    placeX
 };
