@@ -73,5 +73,18 @@ describe('This is the game of tic tac toe', () => {
                 expect(detectWin(board)).toBe(false);
             });
         });
+
+        describe('And in the third vertical column', () => {
+            it('Win when the board is:\n' + 
+            '--X\n' +
+            '--X\n' +
+            '--X', () => {
+                var board = createBoard();
+                board = place(board, 2, 0, 'X');
+                board = place(board, 2, 1, 'X');
+                board = place(board, 2, 2, 'X');
+                expect(detectWin(board)).toBe(true);
+            });
+        });
     });
 });
