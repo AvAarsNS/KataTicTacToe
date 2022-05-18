@@ -41,11 +41,19 @@ function boardIsFull(board) {
 }
 
 function formatBoard(board) {
-    return  ' | | \n' + 
-            '-----\n' + 
-            ' | | \n' + 
-            '-----\n' + 
-            ' | | \n'
+    var formattedBoard = '';
+    
+    for (let row = 0; row < 3; row++) {
+        for (let column = 0; column < 3; column++) {
+            formattedBoard += board[row][column];
+            if (column < 2)
+                formattedBoard += '|';
+        }
+        if (row < 2)
+            formattedBoard += '\n-----\n';
+    }
+
+    return  formattedBoard;
 }
 
 module.exports = {

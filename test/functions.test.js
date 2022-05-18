@@ -302,13 +302,33 @@ describe('This is the game of tic tac toe', () => {
             '-----\n' + 
             ' | | \n' + 
             '-----\n' + 
-            ' | | \n', () => {
+            ' | | ', () => {
             var board = createBoard();
             expect(formatBoard(board)).toBe(' | | \n' + 
                                             '-----\n' + 
                                             ' | | \n' + 
                                             '-----\n' + 
-                                            ' | | \n')
+                                            ' | | ')
+        });
+        it('A half full board:\n' + 
+            'X| | \n' + 
+            '-----\n' + 
+            'X|O| \n' + 
+            '-----\n' + 
+            'X| |O', () => {
+            var board = createBoard();
+
+            board = place(board, 0, 0, 'X');
+            board = place(board, 1, 1, 'O');
+            board = place(board, 0, 1, 'X');
+            board = place(board, 2, 2, 'O');
+            board = place(board, 0, 2, 'X');
+
+            expect(formatBoard(board)).toBe('X| | \n' + 
+                                            '-----\n' + 
+                                            'X|O| \n' + 
+                                            '-----\n' + 
+                                            'X| |O')
         });
     });
 });
