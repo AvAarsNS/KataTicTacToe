@@ -234,6 +234,20 @@ describe('This is the game of tic tac toe', () => {
         'O-X\n' +
         'X should win, and O should not', () => {
             var board = createBoard();
+
+            board = place(board, 0, 0, 'X');
+            board = place(board, 0, 1, 'O');
+
+            expect(detectWin(board, 'X')).toBe(false);
+            expect(detectWin(board, 'O')).toBe(false);
+
+            board = place(board, 1, 1, 'X');
+            board = place(board, 0, 2, 'O');
+            
+            expect(detectWin(board, 'X')).toBe(false);
+            expect(detectWin(board, 'O')).toBe(false);
+
+            board = place(board, 2, 2, 'X');
             
             expect(detectWin(board, 'X')).toBe(true);
             expect(detectWin(board, 'O')).toBe(false);
