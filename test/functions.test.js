@@ -13,5 +13,11 @@ describe('This is the game of tic tac toe', () => {
 
             expect(board).toStrictEqual([['X',' ',' '],[' ',' ',' '],[' ',' ',' ']]);
         });
+        it('An X in the top center', () => {
+            var board = createBoard();
+            board = placeX(board);
+
+            expect(board).toStrictEqual([[' ','X',' '],[' ',' ',' '],[' ',' ',' ']]);
+        });
     });
 });
