@@ -9,9 +9,9 @@ function place(board, column, row, marker) {
     return board;
 }
 
-function detectWin(board) {
+function detectWin(board, marker) {
     for (let column = 0; column < 3; column++) {
-        if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
+        if (board[0][column] == marker && board[1][column] == marker && board[2][column] == marker)
             return true;
         
     }
