@@ -38,6 +38,8 @@ We want to detect horizontal wins:
 ✔ Three Xes in second row: win!
 ✔ Three O's in third row: win!
 
+✴ UAT Scenario 3
+
 We want to detect diagonal wins:
 - ↘ X: win
 - ↗ O: win
