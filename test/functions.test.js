@@ -1,4 +1,4 @@
-const {createBoard, place, detectWin, boardIsFull, formatBoard, placeIsEmpty} = require('../src/functions');
+const {createBoard, place, detectWin, boardIsFull, formatBoard, placeIsEmpty, nextPlayer} = require('../src/functions');
 
 describe('This is the game of tic tac toe', () => {
     it('we want to create an empty board', () => {
@@ -371,6 +371,13 @@ describe('This is the game of tic tac toe', () => {
             var board = createBoard();
             board = place(board, 1, 1, 'O')
             expect(placeIsEmpty(board, 2, 2)).toBe(true);
+        });
+    });
+
+    describe('We want to select the next player based on the current one:', () => {
+        it('Select X if there is no previous player', () => {
+            var currentPlayer = undefined;
+            expect(nextPlayer(currentPlayer)).toBe('X');
         });
     });
 });

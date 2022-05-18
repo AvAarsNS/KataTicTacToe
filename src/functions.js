@@ -60,11 +60,16 @@ function placeIsEmpty(board, column, row) {
     return board[column][row] == ' ';
 }
 
+function nextPlayer(previous) {
+    return
+}
+
 module.exports = {
     createBoard,
     place,
     detectWin,
     boardIsFull,
     formatBoard,
-    placeIsEmpty
+    placeIsEmpty,
+    nextPlayer
 };
