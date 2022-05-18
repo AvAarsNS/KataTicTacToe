@@ -31,7 +31,7 @@ function detectWin(board, marker) {
 }
 
 function boardIsFull(board) {
-    return
+    return false;
 }
 
 module.exports = {
