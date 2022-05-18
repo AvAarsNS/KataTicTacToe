@@ -383,5 +383,9 @@ describe('This is the game of tic tac toe', () => {
             var currentPlayer = 'X';
             expect(nextPlayer(currentPlayer)).toBe('O');
         });
+        it('Select X if the previous player was O', () => {
+            var currentPlayer = 'O';
+            expect(nextPlayer(currentPlayer)).toBe('X');
+        });
     });
 });

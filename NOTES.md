@@ -71,5 +71,5 @@ Detecting if a space is empty:
 
 We want to select the next player:
 ✔ When there is no previous player: select X
-✴ Previous player X: select O
-- Previous player O: select X
+✔ Previous player X: select O
+✔ Previous player O: select X

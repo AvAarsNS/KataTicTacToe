@@ -61,6 +61,8 @@ function placeIsEmpty(board, column, row) {
 }
 
 function nextPlayer(previous) {
+    if (previous == 'X')
+        return 'O';
     return 'X';
 }
 
