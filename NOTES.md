@@ -73,3 +73,6 @@ We want to select the next player:
 ✔ When there is no previous player: select X
 ✔ Previous player X: select O
 ✔ Previous player O: select X
+
+## Fourth pomodoro
+Let's bring it all together!
