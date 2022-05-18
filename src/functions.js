@@ -57,7 +57,7 @@ function formatBoard(board) {
 }
 
 function placeIsEmpty(board, column, row) {
-    return board[column][row] == ' ';
+    return board[row][column] == ' ';
 }
 
 function nextPlayer(previous) {

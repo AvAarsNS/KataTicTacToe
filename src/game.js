@@ -29,7 +29,21 @@ async function ticTacToe() {
         board = place(board, column, row, player);
         console.log(formatBoard(board) + '\n');
 
-        winConditionMet = true;
+        if (detectWin(board, player)) {
+            winConditionMet = true;
+
+            console.log('PLAYER ' + player + ' WON!');
+            break;
+        }
+
+        if (boardIsFull(board)) {
+            winConditionMet = true;
+
+            console.log('GAME ENDS WITH A DRAW!');
+            break
+        }
+
+        player = nextPlayer(player);
     }
 }
 
