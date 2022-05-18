@@ -112,6 +112,30 @@ describe('This is the game of tic tac toe', () => {
         });
     });
 
+    describe('We want to be able to detect horizontal wins:', () => {
+        describe('In the first horizontal row:', () => {
+            it('X doesn\'t win when when the board is:\n' + 
+            'X--\n' +
+            '---\n' +
+            '---', () => {
+                var board = createBoard();
+                board = place(board, 0, 0, 'X');
+                expect(detectWin(board, 'X')).toBe(false);
+            });
+
+            it('X wins when when the board is:\n' + 
+            'XXX\n' +
+            '---\n' +
+            '---', () => {
+                var board = createBoard();
+                board = place(board, 0, 0, 'X');
+                board = place(board, 1, 0, 'X');
+                board = place(board, 2, 0, 'X');
+                expect(detectWin(board, 'X')).toBe(true);
+            });
+        });
+    });
+
     describe('We want to test the UAT scenarios:', () => {
         it('UAT scenario 2:\n' + 
         'X--\n' +
