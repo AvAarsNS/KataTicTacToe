@@ -62,6 +62,16 @@ describe('This is the game of tic tac toe', () => {
                 board = place(board, 0, 2, 'X');
                 expect(detectWin(board)).toBe(true);
             });
+            
+            it('No win when the board is:\n' + 
+               'X--\n' +
+               '---\n' +
+               'X--', () => {
+                var board = createBoard();
+                board = place(board, 0, 0, 'X');
+                board = place(board, 0, 2, 'X');
+                expect(detectWin(board)).toBe(false);
+            });
         });
     });
 });

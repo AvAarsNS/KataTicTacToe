@@ -14,8 +14,8 @@ We want to place markers:
 
 We want to detect X wins in the first column:
 ✔ One X in first column: no win
-✴ Three Xes in first column: win!
-- Two Xes in first column: no win
+✔ Three Xes in first column: win!
+✔ Two Xes in first column: no win
 
 We want to detect X wins in other columns:
 - Three Xes in third column: win!
