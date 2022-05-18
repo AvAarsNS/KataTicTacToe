@@ -5,6 +5,7 @@ function createBoard() {
 }
 
 function placeX(board) {
+    board[0][0] = 'X';
     return board;
 }
 
