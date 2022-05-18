@@ -65,6 +65,11 @@ Formatting the board:
 ✔ UAT 5 (Full)
 
 Detecting if a space is empty:
-- Check when place is empty: true
-- Check when place is X: false
-- Check when place is O: false
+✔ Check when place is empty: true
+✔ Check when place is X: false
+✔ Check when place is O: false
+
+We want to select the next player:
+- When there is no previous player: select X
+- Previous player X: select O
+- Previous player O: select X

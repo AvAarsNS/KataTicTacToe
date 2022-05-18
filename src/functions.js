@@ -56,8 +56,8 @@ function formatBoard(board) {
     return  formattedBoard;
 }
 
-function placeIsEmpty(board) {
-    return false
+function placeIsEmpty(board, column, row) {
+    return board[column][row] == ' ';
 }
 
 module.exports = {

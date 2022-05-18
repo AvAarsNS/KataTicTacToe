@@ -362,5 +362,15 @@ describe('This is the game of tic tac toe', () => {
             var board = createBoard();
             expect(placeIsEmpty(board, 0, 0)).toBe(true);
         });
+        it('We can check the center when there is an X', () => {
+            var board = createBoard();
+            board = place(board, 1, 1, 'X')
+            expect(placeIsEmpty(board, 1, 1)).toBe(false);
+        });
+        it('We can check the bottom right when there is an O in the center', () => {
+            var board = createBoard();
+            board = place(board, 1, 1, 'O')
+            expect(placeIsEmpty(board, 2, 2)).toBe(true);
+        });
     });
 });
