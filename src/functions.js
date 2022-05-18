@@ -56,10 +56,15 @@ function formatBoard(board) {
     return  formattedBoard;
 }
 
+function placeIsEmpty(board) {
+    return false
+}
+
 module.exports = {
     createBoard,
     place,
     detectWin,
     boardIsFull,
-    formatBoard
+    formatBoard,
+    placeIsEmpty
 };

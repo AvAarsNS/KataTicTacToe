@@ -63,3 +63,8 @@ Formatting the board:
 ✔ UAT 1 (Empty)
 ✔ UAT 2 (Half full)
 ✔ UAT 5 (Full)
+
+Detecting if a space is empty:
+- Check when place is empty: true
+- Check when place is X: false
+- Check when place is O: false
