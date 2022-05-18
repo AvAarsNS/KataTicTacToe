@@ -49,7 +49,7 @@ describe('This is the game of tic tac toe', () => {
                '---', () => {
                 var board = createBoard();
                 board = place(board, 0, 0, 'X');
-                expect(detectWin(board)).toBe(false);
+                expect(detectWin(board, 'X')).toBe(false);
             });
             
             it('Win when the board is:\n' + 
@@ -60,7 +60,7 @@ describe('This is the game of tic tac toe', () => {
                 board = place(board, 0, 0, 'X');
                 board = place(board, 0, 1, 'X');
                 board = place(board, 0, 2, 'X');
-                expect(detectWin(board)).toBe(true);
+                expect(detectWin(board, 'X')).toBe(true);
             });
             
             it('No win when the board is:\n' + 
@@ -70,7 +70,7 @@ describe('This is the game of tic tac toe', () => {
                 var board = createBoard();
                 board = place(board, 0, 0, 'X');
                 board = place(board, 0, 2, 'X');
-                expect(detectWin(board)).toBe(false);
+                expect(detectWin(board, 'X')).toBe(false);
             });
         });
 
@@ -83,7 +83,20 @@ describe('This is the game of tic tac toe', () => {
                 board = place(board, 2, 0, 'X');
                 board = place(board, 2, 1, 'X');
                 board = place(board, 2, 2, 'X');
-                expect(detectWin(board)).toBe(true);
+                expect(detectWin(board, 'X')).toBe(true);
+            });
+        });
+
+        describe('And we want O to be able to win as well:', () => {
+            it('On wins when the board is:\n' + 
+            '-O-\n' +
+            '-O-\n' +
+            '-O-', () => {
+                var board = createBoard();
+                board = place(board, 1, 0, 'O');
+                board = place(board, 1, 1, 'O');
+                board = place(board, 1, 2, 'O');
+                expect(detectWin(board, 'O')).toBe(true);
             });
         });
     });

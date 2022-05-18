@@ -10,7 +10,13 @@ function place(board, column, row, marker) {
 }
 
 function detectWin(board) {
-    return board[0][0] == 'X' && board[1][0] == 'X' && board[2][0] == 'X';
+    for (let column = 0; column < 3; column++) {
+        if (board[0][column] == 'X' && board[1][column] == 'X' && board[2][column] == 'X')
+            return true;
+        
+    }
+
+    return false;
 }
 
 module.exports = {
