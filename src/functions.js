@@ -40,9 +40,18 @@ function boardIsFull(board) {
     return true;
 }
 
+function formatBoard(board) {
+    return  ' | | \n' + 
+            '-----\n' + 
+            ' | | \n' + 
+            '-----\n' + 
+            ' | | \n'
+}
+
 module.exports = {
     createBoard,
     place,
     detectWin,
-    boardIsFull
+    boardIsFull,
+    formatBoard
 };

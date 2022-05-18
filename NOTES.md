@@ -56,3 +56,10 @@ We want to check for UAT scenario 5
 Format the board
 Detect if a space is empty (so we can place something there)
 And be able to select the next player based on the current one
+
+✔ UAT Scenario 5
+
+Formatting the board:
+✔ UAT 1 (Empty)
+- UAT 2 (Half full)
+- UAT 5 (Full)

@@ -1,4 +1,4 @@
-const {createBoard, place, detectWin, boardIsFull} = require('../src/functions');
+const {createBoard, place, detectWin, boardIsFull, formatBoard} = require('../src/functions');
 
 describe('This is the game of tic tac toe', () => {
     it('we want to create an empty board', () => {
@@ -293,6 +293,22 @@ describe('This is the game of tic tac toe', () => {
             expect(detectWin(board, 'X')).toBe(false);
             expect(detectWin(board, 'O')).toBe(false);
             expect(boardIsFull(board)).toBe(true);
+        });
+    });
+
+    describe('We want to be able to format the board:', () => {
+        it('An empty board:\n' + 
+            ' | | \n' + 
+            '-----\n' + 
+            ' | | \n' + 
+            '-----\n' + 
+            ' | | \n', () => {
+            var board = createBoard();
+            expect(formatBoard(board)).toBe(' | | \n' + 
+                                            '-----\n' + 
+                                            ' | | \n' + 
+                                            '-----\n' + 
+                                            ' | | \n')
         });
     });
 });
