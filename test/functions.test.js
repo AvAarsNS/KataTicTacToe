@@ -185,6 +185,20 @@ describe('This is the game of tic tac toe', () => {
             var board = createBoard();
             expect(boardIsFull(board)).toBe(false);
         });
+        it('An almost full board is, still, NOT full', () => {
+            var board = createBoard();
+            board[0] = ['X', 'O', 'X'];
+            board[1] = ['O', ' ', 'O'];
+            board[2] = ['X', 'O', 'X'];
+            expect(boardIsFull(board)).toBe(false);
+        });
+        it('An full board IS full', () => {
+            var board = createBoard();
+            board[0] = ['X', 'O', 'X'];
+            board[1] = ['O', 'O', 'X'];
+            board[2] = ['X', 'O', 'O'];
+            expect(boardIsFull(board)).toBe(true);
+        });
     });
 
     describe('We want to test the UAT scenarios:', () => {

@@ -47,6 +47,6 @@ We want to detect diagonal wins:
 ✔ UAT Scenario 4
 
 A little bit of time left, maybe we want to check for a draw
-- Board empty: no draw
-- Board almost full: no draw
-- Board full: draw
+✔ Board empty: no draw
+✔ Board almost full: no draw
+✔ Board full: draw
