@@ -23,3 +23,5 @@ We want to detect X wins in other columns:
 We want to detect column wins for O:
 ✔ Three O's in second column: win
 ✔ Three Xes in second column: no win for O
+
+POMODORO OVER, NOW HALF HOUR BREAK BECAUSE OF DAILY
