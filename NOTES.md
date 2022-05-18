@@ -61,5 +61,5 @@ And be able to select the next player based on the current one
 
 Formatting the board:
 ✔ UAT 1 (Empty)
-- UAT 2 (Half full)
-- UAT 5 (Full)
+✔ UAT 2 (Half full)
+✔ UAT 5 (Full)
