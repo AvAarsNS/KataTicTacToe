@@ -50,3 +50,9 @@ A little bit of time left, maybe we want to check for a draw
 ✔ Board empty: no draw
 ✔ Board almost full: no draw
 ✔ Board full: draw
+
+## Third pomodoro
+We want to check for UAT scenario 5
+Format the board
+Detect if a space is empty (so we can place something there)
+And be able to select the next player based on the current one
