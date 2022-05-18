@@ -70,6 +70,6 @@ Detecting if a space is empty:
 ✔ Check when place is O: false
 
 We want to select the next player:
-- When there is no previous player: select X
-- Previous player X: select O
+✔ When there is no previous player: select X
+✴ Previous player X: select O
 - Previous player O: select X

@@ -61,7 +61,7 @@ function placeIsEmpty(board, column, row) {
 }
 
 function nextPlayer(previous) {
-    return
+    return 'X';
 }
 
 module.exports = {
