@@ -1,4 +1,4 @@
-const {createBoard, placeX} = require('../src/functions');
+const {createBoard, place} = require('../src/functions');
 
 describe('This is the game of tic tac toe', () => {
     it('we want to create an empty board', () => {
@@ -33,7 +33,7 @@ describe('This is the game of tic tac toe', () => {
         });
         it('An O in the center', () => {
             var board = createBoard();
-            board = placeX(board, 1, 1);
+            board = place(board, 1, 1);
 
             expect(board).toStrictEqual([[' ',' ',' '],
                                          [' ','O',' '],
