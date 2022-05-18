@@ -29,3 +29,15 @@ POMODORO OVER, NOW HALF HOUR BREAK BECAUSE OF DAILY
 ## Second pomodoro
 First, we want to test the second UAT, so we have a complete story
 Then, we want to be able to detect horizontal lines, followed by diagonals
+
+✴ UAT Scenario 2
+
+We want to detect horizontal wins:
+- One X in first row: no win
+- Three Xes in first row: win!
+- Three Xes in second row: win!
+- Three O's in third row: win!
+
+We want to detect diagonal wins:
+- ↘ X: win
+- ↗ O: win
